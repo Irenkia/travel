@@ -5,7 +5,6 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Dashboard from "./pages/Dashboard";
 import SignUp from "./pages/SignUp";
-import NoMatch from "./pages/NoMatch";
 
 import "./styles/App.css";
 
@@ -16,10 +15,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Navbar />}>
             <Route path="/" exact element={<Home />} />
-            <Route path="/services" element={<About />} />
-            <Route path="/products" element={<Dashboard />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/sign-up" element={<SignUp />} />
-            <Route path="*" element={<NoMatch />} />
           </Route>
         </Routes>
       </Router>
