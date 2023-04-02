@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "../button/Button";
+import {Button} from "../button/Button";
 import "../button/Button.css";
 import "./Basic.css";
 
@@ -14,14 +14,14 @@ const Basic = () => {
           buttonStyle="btn--outline"
           buttonSize="btn--large"
           value="GET STARTED"
-        ></Button>
+        >GET STARTED</Button>
         <Button
           className="btns"
           buttonStyle="btn--primary"
           buttonSize="btn--large"
           onClick={console.log("Hello")}
-          value="SIGN UP"
-        >
+          value="SEE OFERS"
+        >SEE OFERS
         </Button>
       </div>
     </div>

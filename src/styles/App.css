@@ -8,8 +8,7 @@
 .home,
 .about,
 .dashboard,
-.sign-up,
-.no-match {
+.sign-up{
   display: flex;
   margin-top: 2rem;
   height: 3rem;
