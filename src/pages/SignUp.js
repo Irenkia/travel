@@ -1,12 +1,16 @@
 import React from "react";
-import "./../styles/App.css"
+import Footer from "../components/footer/Footer";
+import "./../styles/App.css";
 
-const SignUp = ()=> {
+const SignUp = () => {
   return (
-    <div>
-      <h1 className="sign-up">Sign Up</h1>
-    </div>
+    <>
+      <div className="sign-up">
+        <h1>Sign Up</h1>
+      </div>
+      <Footer />
+    </>
   );
-}
+};
 
 export default SignUp;

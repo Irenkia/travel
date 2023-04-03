@@ -1,0 +1,56 @@
+.footer-container {
+    padding: 4rem 0 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #242424;
+  }
+  
+  .footer-subscription {
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .footer-subscription > p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+      'Lucida Sans', Arial, sans-serif;
+  }
+  
+  .footer-subscription-heading {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+  }
+  
+  .footer-subscription-text {
+    margin-bottom: 1.5rem;
+    font-size: 1.25rem;
+  }
+  
+  .footer-input {
+    padding: 8px 20px;
+    margin-right: 10px;
+    margin-bottom: 16px;
+    outline: none;
+    border-radius: 2px;
+    font-size: 18px;
+    border: 1px solid #fff;
+  }
+  
+  @media screen and (max-width: 960px) {
+    .footer-input {
+      width: 100%;
+    }
+  
+    .btn {
+      width: 100%;
+    }
+  }
+  
+ 

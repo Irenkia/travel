@@ -5,14 +5,47 @@
   font-family: 'PT Sans', sans-serif;
 }
 
-.home,
-.about,
-.dashboard,
-.sign-up{
+.home{
   display: flex;
   margin-top: 2rem;
   height: 3rem;
   align-items: center;
   justify-content: center;
   font-size: 3rem;
+}
+
+.about{
+  height: 100vh;
+  width: 100%; 
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: rgb(48, 47, 47);
+  font-size: 3rem;
+  background-image: url('./../assets/img-5.jpg');
+}
+
+.dashboard{
+  height: 100vh;
+  width: 100%; 
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #fff;
+  font-size: 3rem;
+  background-image: url('./../assets/img-3.jpg');
+}
+
+.sign-up{
+  height: 100vh;
+  width: 100%; 
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: rgb(48, 47, 47);
+  font-size: 3rem;
+  background-image: url('./../assets/img-4.jpg');
 }
