@@ -1,0 +1,30 @@
+.cards {
+    padding: 4rem;
+    color:aliceblue;
+    background-image: url('./../../assets/fon1.jpg');
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 4rem;
+  }
+  
+  .cards-container{
+    margin: 0 auto;
+    padding: 5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .cards-item{
+    margin: 3rem;
+    padding: 2rem;
+    background-color: rgb(205, 224, 241);
+    border-radius: 1rem;
+    box-shadow: 
+    0 0 0 1px rgb(88, 112, 128),
+    0 0 10px 5px rgb(99, 150, 184);
+  }
+    

@@ -14,6 +14,7 @@ const Basic = () => {
           buttonStyle="btn--outline"
           buttonSize="btn--large"
           value="GET STARTED"
+          path='/about'
         >GET STARTED</Button>
         <Button
           className="btns"
@@ -21,6 +22,7 @@ const Basic = () => {
           buttonSize="btn--large"
           onClick={console.log("Hello")}
           value="SEE OFERS"
+          path='/dashboard'
         >SEE OFERS
         </Button>
       </div>

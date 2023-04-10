@@ -49,7 +49,7 @@ const Navbar = () => {
               <Link to="/sign-up" className="nav-links-mobile" onClick={closeMobileMenu}>Sign Up</Link>
             </ol>
           </ul>
-          {button && <Button buttonStyle='btn--outline' value="SIGN UP">SIGN UP</Button>}
+          {button && <Button buttonStyle='btn--outline' value="SIGN UP" path="/sign-up">SIGN UP</Button>}
         </div>
       </nav>
       <Outlet />
