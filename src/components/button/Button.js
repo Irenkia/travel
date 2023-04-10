@@ -1,15 +1,3 @@
-// import React from 'react';
-// import { Link } from 'react-router-dom';
-
-// const Button =({value}) =>{
-//     return ( 
-//         <Link to='sign-up'>
-//         <button className='btn'>{value}</button>
-//         </Link>
-//      );
-// }
-
-// export default Button;
 import React from 'react';
 import './Button.css';
 import { Link } from 'react-router-dom';
@@ -41,3 +29,16 @@ export const Button = ({
     </Link>
   );
 };
+
+// import React from 'react';
+// import { Link } from 'react-router-dom';
+
+// const Button =({value}) =>{
+//     return ( 
+//         <Link to='sign-up'>
+//         <button className='btn'>{value}</button>
+//         </Link>
+//      );
+// }
+
+// export default Button;
