@@ -29,3 +29,77 @@ h1 {
 .card-item-img {
   object-fit: cover;
 }
+
+@media screen and (max-width: 1200px) {
+  .cards-container {
+    width: 100%;
+    padding: 4rem;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .cards-container {
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+  }
+  .cards-item {
+    width: 100%;
+    display: flex;
+  }
+  .card-item-img {
+    display: flex;
+    flex-basis: auto;
+  }
+  .img {
+    max-width: 100%;
+    display: flex;
+    flex-shrink: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cards-container {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+  }
+  .cards-item {
+    width: 100%;
+    display: flex;
+    margin: 1.5rem;
+    padding: 1.5rem;
+  }
+  .card-item-img {
+    display: flex;
+    flex-basis: auto;
+  }
+  .img {
+    max-width: 100%;
+    display: flex;
+    flex-shrink: 1;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .cards-container {
+    width: 100%;
+    display: flex;
+  }
+  .cards-item {
+    width: 100%;
+    display: flex;
+    margin: 1rem;
+    padding: 1rem;
+  }
+  .card-item-img {
+    display: flex;
+    flex-basis: auto;
+  }
+  .img {
+    max-width: 100%;
+    display: flex;
+    flex-shrink: 2;
+  }
+}
