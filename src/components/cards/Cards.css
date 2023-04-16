@@ -26,8 +26,23 @@ h1 {
   box-shadow: 0 0 0 1px rgb(88, 112, 128), 0 0 10px 5px rgb(99, 150, 184);
 }
 
+.cards-item-link {
+  text-decoration: none;
+}
+
 .card-item-img {
   object-fit: cover;
+}
+
+.cards-item-info {
+  padding: 20px 30px 30px;
+  color: rgb(13, 99, 133);
+}
+
+.cards-item-text {
+  color: #152555;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 @media screen and (max-width: 1200px) {
