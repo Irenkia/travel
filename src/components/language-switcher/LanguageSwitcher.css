@@ -1,0 +1,7 @@
+.select {
+  padding: 2px 5px;
+  align-items: center;
+  text-align: center;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
