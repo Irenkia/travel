@@ -12,7 +12,7 @@ const LanguageSwitcher = () => {
         onChange={(e) => i18n.changeLanguage(e.target.value)}
       >
         <option value="en">English</option>
-        <option value="ua">Ukrain</option>
+        <option value="ua">Українська</option>
       </select>
     </div>
   );

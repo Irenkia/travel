@@ -4,5 +4,11 @@
   "nav_link2": "Про нас",
   "nav_link3": "Інформаційна панель",
   "nav_link4": "Зареєструватися",
-  "document_title": "ПРИГОДИ ЧЕКАЮТЬ"
+  "basic_title": "ПРИГОДИ ЧЕКАЮТЬ",
+  "basic_text": "На що ти чекаєш?",
+  "basic_btn_get": "ПОЧАТИ",
+  "basic_btn_see": "ПРОПОЗИЦІЇ",
+  "about_title": "Про нас",
+  "dashboard_title": "Інформаційна панель",
+  "sign_up_title": "Зареєструватися"
 }

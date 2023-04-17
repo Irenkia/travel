@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Footer from "../components/footer/Footer";
+import { useTranslation } from "react-i18next";
 import "./../styles/App.css";
 import "./../styles/SignUp.css";
 
@@ -33,10 +34,15 @@ const SignUp = () => {
     console.log(firstName, lastName, email, password, confirmPassword);
   };
 
+  const { t } = useTranslation();
+
   return (
     <>
       <div className="sign-up">
-        <h1>Sign Up</h1>
+        <h1>
+          {t("sign_up_title")}
+          {/* Sign Up */}
+        </h1>
         <div className="form">
           <div className="form-body">
             <div className="username">

@@ -4,5 +4,11 @@
   "nav_link2": "About",
   "nav_link3": "Dashboard",
   "nav_link4": "Sign Up",
-  "document_title": "ADVENTURE AWAITS"
+  "basic_title": "ADVENTURE AWAITS",
+  "basic_text": "What are you waiting for?",
+  "basic_btn_get": "GET STARTED",
+  "basic_btn_see": "SEE OFFERS",
+  "about_title": "About Us",
+  "dashboard_title": "Dashboard",
+  "sign_up_title": "Sign Up"
 }
