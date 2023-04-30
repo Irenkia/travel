@@ -1,5 +1,6 @@
 .select {
   height: 1rem;
+  width: 100%;
   align-items: center;
   text-align: center;
   font-size: 0.9rem;
@@ -11,6 +12,7 @@
 select {
   padding: 0.5rem;
   display: flex;
+  width: 100%;
   justify-content: center;
   align-items: center;
   font-size: 19px;

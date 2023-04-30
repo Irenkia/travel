@@ -8,7 +8,18 @@
   "basic_text": "What are you waiting for?",
   "basic_btn_get": "GET STARTED",
   "basic_btn_see": "SEE OFFERS",
+  "cards_title": "Check out these EPIC Destinations!",
   "about_title": "About Us",
   "dashboard_title": "Dashboard",
-  "sign_up_title": "Sign Up"
+  "sign_up_title": "Sign Up",
+  "sign_up_name": "First Name",
+  "sign_up_surname": "Last Name",
+  "sign_up_email": "Email",
+  "sign_up_password": "Password",
+  "sign_up_password2": "Confirm Password",
+  "sign_up_register": "Register",
+  "footer_title": "Join the Adventure newsletter to receive our best vacation deals",
+  "footer_text": "You can unsubscribe at any time",
+  "footer_email": "Your Email",
+  "footer_subscribe": "Subscribe"
 }

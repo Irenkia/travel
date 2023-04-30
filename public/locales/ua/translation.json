@@ -8,7 +8,18 @@
   "basic_text": "На що ти чекаєш?",
   "basic_btn_get": "ПОЧАТИ",
   "basic_btn_see": "ПРОПОЗИЦІЇ",
+  "cards_title": "Перегляньте ці вигідні напрямки!",
   "about_title": "Про нас",
   "dashboard_title": "Інформаційна панель",
-  "sign_up_title": "Зареєструватися"
+  "sign_up_title": "Зареєструватися",
+  "sign_up_name": "Ім'я",
+  "sign_up_surname": "Прізвище",
+  "sign_up_email": "Електронна пошта",
+  "sign_up_password": "Пароль",
+  "sign_up_password2": "Підтвердьте пароль",
+  "sign_up_register": "Зареєструватися",
+  "footer_title": "Приєднуйтесь до розсилки, щоб отримувати наші найкращі пропозиції щодо відпочинку",
+  "footer_text": "Ви можете скасувати підписку в будь-який час",
+  "footer_email": "Ваша електронна адреса",
+  "footer_subscribe": "Підпишіться"
 }

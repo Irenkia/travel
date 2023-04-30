@@ -47,7 +47,7 @@ const SignUp = () => {
           <div className="form-body">
             <div className="username">
               <label className="form-label" htmlFor="firstName">
-                First Name
+                {t("sign_up_name")}
               </label>
               <input
                 className="form-input"
@@ -55,12 +55,13 @@ const SignUp = () => {
                 value={firstName}
                 onChange={(e) => handleInputChange(e)}
                 id="firstName"
-                placeholder="First Name"
+                placeholder={t("sign_up_name")}
               />
             </div>
             <div className="lastname">
               <label className="form-label" htmlFor="lastName">
-                Last Name
+                {t("sign_up_surname")}
+                {/* Last Name */}
               </label>
               <input
                 className="form-input"
@@ -69,12 +70,13 @@ const SignUp = () => {
                 onChange={(e) => handleInputChange(e)}
                 name=""
                 id="lastName"
-                placeholder="LastName"
+                placeholder={t("sign_up_surname")}
               />
             </div>
             <div className="email">
               <label className="form-label" htmlFor="email">
-                Email
+                {t("sign_up_email")}
+                {/* Email */}
               </label>
               <input
                 className="form-input"
@@ -82,12 +84,13 @@ const SignUp = () => {
                 value={email}
                 onChange={(e) => handleInputChange(e)}
                 id="email"
-                placeholder="Email"
+                placeholder={t("sign_up_email")}
               />
             </div>
             <div className="password">
               <label className="form-label" htmlFor="password">
-                Password
+                {t("sign_up_password")}
+                {/* Password */}
               </label>
               <input
                 className="form-input"
@@ -95,12 +98,13 @@ const SignUp = () => {
                 value={password}
                 onChange={(e) => handleInputChange(e)}
                 id="password"
-                placeholder="Password"
+                placeholder={t("sign_up_password")}
               />
             </div>
             <div className="confirm-password">
               <label className="form-label" htmlFor="confirmPassword">
-                Confirm Password
+                {t("sign_up_password2")}
+                {/* Confirm Password */}
               </label>
               <input
                 className="form-input"
@@ -108,7 +112,7 @@ const SignUp = () => {
                 value={confirmPassword}
                 onChange={(e) => handleInputChange(e)}
                 id="confirmPassword"
-                placeholder="Confirm Password"
+                placeholder={t("sign_up_password2")}
               />
             </div>
           </div>
@@ -118,7 +122,8 @@ const SignUp = () => {
               type="submit"
               className="btn"
             >
-              Register
+              {t("sign_up_register")}
+              {/* Register */}
             </button>
           </div>
         </div>

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Button } from "../button/Button";
+import { useTranslation } from "react-i18next";
 import "./Footer.css";
 
 const Footer = () => {
@@ -13,14 +14,17 @@ const Footer = () => {
   const handleSubmit = () => {
     console.log(email);
   };
+  const { t } = useTranslation();
   return (
     <div className="footer-container">
       <section className="footer-subscription">
         <p className="footer-subscription-heading">
-          Join the Adventure newsletter to receive our best vacation deals
+          {t("footer_title")}
+          {/* Join the Adventure newsletter to receive our best vacation deals */}
         </p>
         <p className="footer-subscription-text">
-          You can unsubscribe at any time.
+          {t("footer_text")}
+          {/* You can unsubscribe at any time */}
         </p>
         <div className="input-areas">
           <form>
@@ -30,14 +34,16 @@ const Footer = () => {
               value={email}
               onChange={(e) => handleInputChange(e)}
               name="email"
-              placeholder="Your Email"
+              placeholder={t("footer_email")}
+              // placeholder="Your Email"
             />
             <Button
               onClick={() => handleSubmit()}
               buttonStyle="btn--outline"
               path="./about"
             >
-              Subscribe
+              {t("footer_subscribe")}
+              {/* Subscribe */}
             </Button>
           </form>
         </div>
