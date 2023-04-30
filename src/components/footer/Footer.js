@@ -53,31 +53,43 @@ const Footer = () => {
       <section class="footer-links">
         <div className="footer-link-wrapper">
           <div class="footer-link-items">
-            <h2>About Us</h2>
-            <Link to="/about">How it works</Link>
-            <Link to="/">Testimonials</Link>
-            <Link to="/">Careers</Link>
-            <Link to="/">Investors</Link>
-            <Link to="/">Terms of Service</Link>
+            <h2>
+              {t("footer_links_title1")}
+              {/* About Us */}
+            </h2>
+            <Link to="/about">{t("footer_link_about1")}</Link>
+            <Link to="/">{t("footer_link_about2")}</Link>
+            <Link to="/">{t("footer_link_about3")}</Link>
+            <Link to="/">{t("footer_link_about4")}</Link>
+            <Link to="/">{t("footer_link_about5")}</Link>
           </div>
           <div class="footer-link-items">
-            <h2>Contact Us</h2>
-            <Link to="/sign-up">Contact</Link>
-            <Link to="/">Support</Link>
-            <Link to="/">Destinations</Link>
-            <Link to="/">Sponsorships</Link>
+            <h2>
+              {t("footer_links_title2")}
+              {/* Contact Us */}
+            </h2>
+            <Link to="/sign-up">{t("footer-link-sign-up1")}</Link>
+            <Link to="/">{t("footer-link-sign-up2")}</Link>
+            <Link to="/">{t("footer-link-sign-up3")}</Link>
+            <Link to="/">{t("footer-link-sign-up4")}</Link>
           </div>
         </div>
         <div className="footer-link-wrapper">
           <div class="footer-link-items">
-            <h2>Videos</h2>
-            <Link to="/">Submit Video</Link>
-            <Link to="/">Ambassadors</Link>
-            <Link to="/">Agency</Link>
-            <Link to="/">Influencer</Link>
+            <h2>
+              {t("footer_links_title3")}
+              {/* Videos */}
+            </h2>
+            <Link to="/">{t("footer_link_video1")}</Link>
+            <Link to="/">{t("footer_link_video2")}</Link>
+            <Link to="/">{t("footer_link_video3")}</Link>
+            <Link to="/">{t("footer_link_video4")}</Link>
           </div>
           <div class="footer-link-items">
-            <h2>Social Media</h2>
+            <h2>
+              {t("footer_links_title4")}
+              {/* Social Media */}
+            </h2>
             <Link to="/">Instagram</Link>
             <Link to="/">Facebook</Link>
             <Link to="/">Youtube</Link>
@@ -90,11 +102,15 @@ const Footer = () => {
         <div class="social-media-wrap">
           <div class="footer-logo">
             <Link to="/" className="social-logo">
-              TRVL
+              {t("footer_social_media_logo")}
+              {/* TRVL */}
               <i class="fab fa-typo3" />
             </Link>
           </div>
-          <small class="website-rights">TRVL © 2023</small>
+          <small class="website-rights">
+            {t("footer_social_media_logo_small")}
+            {/* TRVL © 2023 */}
+          </small>
           <div class="social-icons">
             <Link
               class="social-icon-link facebook"
