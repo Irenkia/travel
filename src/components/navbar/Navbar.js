@@ -5,6 +5,7 @@ import { useTranslation } from "react-i18next";
 import LanguageSwitcher from "../language-switcher/LanguageSwitcher";
 import "./Navbar.css";
 import "./../button/Button.css";
+import "./../language-switcher/LanguageSwitcher.css";
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
@@ -66,6 +67,9 @@ const Navbar = () => {
               </Link>
             </ol>
             <ol className="nav-item">
+              <LanguageSwitcher className="nav-links" />
+            </ol>
+            <ol className="nav-item">
               <Link
                 to="/sign-up"
                 className="nav-links-mobile"
@@ -74,15 +78,6 @@ const Navbar = () => {
                 <strong>{t("nav_link4")}</strong>
                 {/* Sign Up */}
               </Link>
-            </ol>
-            <ol>
-              <Button
-                className="lang"
-                buttonStyle="btn--outline"
-                value="English"
-              >
-                <LanguageSwitcher />
-              </Button>
             </ol>
           </ul>
           {button && (

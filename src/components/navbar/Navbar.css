@@ -75,11 +75,11 @@
   display: none;
 }
 
-.lang {
-  margin-top: 1rem;
+/* .lang {
+  display: flex;
   align-items: center;
-  text-align: center;
-}
+  justify-content: center;
+} */
 
 @media screen and (max-width: 960px) {
   .nav-menu {

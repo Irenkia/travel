@@ -8,6 +8,7 @@ const LanguageSwitcher = () => {
   return (
     <div className="select">
       <select
+        className="links-mobile"
         value={i18n.language}
         onChange={(e) => i18n.changeLanguage(e.target.value)}
       >
