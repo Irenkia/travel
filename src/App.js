@@ -10,15 +10,11 @@ function App() {
     <>
       <Router>
         <Routes>
-        <Route path="/" element={<Navbar />}>
-        {RoutesConfig.map((route, index) => (
-                    <Route
-                        key={index}
-                        path={route.path}
-                        element={route.element}
-                    />
-                ))}
-          </Route> 
+          <Route path="/" element={<Navbar />}>
+            {RoutesConfig.map((route, index) => (
+              <Route key={index} path={route.path} element={route.element} />
+            ))}
+          </Route>
         </Routes>
       </Router>
     </>
@@ -26,7 +22,6 @@ function App() {
 }
 
 export default App;
-
 
 // import React from "react";
 // import { BrowserRouter as Router, Routes, Route } from "react-router-dom";

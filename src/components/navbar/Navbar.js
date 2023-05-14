@@ -82,7 +82,7 @@ const Navbar = () => {
           </ul>
           {button && (
             <Button
-              buttonStyle="btn--outline"
+              buttonStyle="btn--outline button"
               buttonSize="btn--medium"
               value="SIGN UP"
               path="/sign-up"
