@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Country from "./Country";
 import { Table, FormControl } from "react-bootstrap";
+//import CountriesNavbar from "./route/NavbarCountries";
 import "./Countries.css";
 
 function Countries() {
@@ -8,7 +9,7 @@ function Countries() {
   const [filteredCountries, setFilteredCountries] = useState([]);
   const [searchValue, setSearchValue] = useState("");
   useEffect(() => {
-    fetch("https://localhost:8080/api/dashboard/all")
+    fetch("https://localhost:8080/api/dashboard/countries")
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
@@ -35,6 +36,8 @@ function Countries() {
   return (
     <div className="countries">
       <div className="countries-container bg-white p-3">
+        {/* <h2 className="p-3 mb-3">Countries</h2> */}
+        {/* <CountriesNavbar /> */}
         <FormControl
           className="mb-3"
           placeholder="Search"

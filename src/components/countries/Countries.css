@@ -5,10 +5,15 @@
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
 }
 
+h2 {
+  text-align: center;
+  font-size: 3rem;
+}
+
 .countries-container {
   margin: 0 auto;
   padding: 5rem;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
 }
