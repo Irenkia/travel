@@ -1,4 +1,4 @@
-import http from "../http-common";
+import http from "../common/http-common";
 
 const getAll = () => {
   return http.get("/dashboard/countries");
@@ -25,7 +25,7 @@ const removeAll = () => {
 };
 
 const findByName = (name) => {
-  return http.get(`/dashboard/countries?title=${name}`);
+  return http.get(`/dashboard/countries?name=${name}`);
 };
 
 const CountriesService = {

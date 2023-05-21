@@ -1,90 +1,178 @@
 import React, { useEffect, useState } from "react";
-import Country from "./Country";
-import { Table, FormControl } from "react-bootstrap";
-//import CountriesNavbar from "./route/NavbarCountries";
+import CountriesService from "../../services/CountriesService";
+import { Button } from "../button/Button";
+//import { Link } from "react-router-dom";
+//import { Table, FormControl } from "react-bootstrap";
 import "./Countries.css";
 
-function Countries() {
+const Countries = () => {
   const [countries, setCountries] = useState([]);
-  const [filteredCountries, setFilteredCountries] = useState([]);
-  const [searchValue, setSearchValue] = useState("");
+  const [currentCountry, setCurrentCountry] = useState(null);
+  const [currentIndex, setCurrentIndex] = useState(-1);
+  const [searchName, setSearchName] = useState("");
+
   useEffect(() => {
-    fetch("https://localhost:8080/api/dashboard/countries")
-      .then((res) => res.json())
-      .then((data) => {
-        console.log(data);
-        setCountries(
-          data.map((country) => ({
-            id: country.id,
-            name: country.name,
-            capital: country.capital || "---",
-            region: country.region,
-          }))
-        );
-      });
+    retrieveCountries();
   }, []);
 
-  function searchByCountryName(searchName) {
-    setSearchValue(searchName);
-    const result = countries.filter((country) =>
-      country.name.toLowerCase().includes(searchName)
-    );
-    console.log(result);
-    setFilteredCountries(result);
-  }
+  const retrieveCountries = () => {
+    CountriesService.getAll()
+      .then((response) => {
+        setCountries(response.data);
+        console.log(response.data);
+      })
+      .catch((e) => {
+        console.log(e);
+      });
+  };
+
+  // const refreshList = () => {
+  //   retrieveCountries();
+  //   setCurrentCountry(null);
+  //   setCurrentIndex(-1);
+  // };
+
+  const setActiveCountry = (country, index) => {
+    setCurrentCountry(country);
+    setCurrentIndex(index);
+  };
+
+  const onChangeSearchName = (e) => {
+    const searchName = e.target.value;
+    setSearchName(searchName);
+  };
+
+  // const removeAllCountries = () => {
+  //   CountriesService.removeAll()
+  //     .then((response) => {
+  //       console.log(response.data);
+  //       refreshList();
+  //     })
+  //     .catch((e) => {
+  //       console.log(e);
+  //     });
+  // };
+
+  const findByName = () => {
+    CountriesService.findByName(searchName)
+      .then((response) => {
+        setCountries(response.data);
+        console.log(response.data);
+      })
+      .catch((e) => {
+        console.log(e);
+      });
+  };
 
   return (
     <div className="countries">
       <div className="countries-container bg-white p-3">
-        {/* <h2 className="p-3 mb-3">Countries</h2> */}
-        {/* <CountriesNavbar /> */}
-        <FormControl
-          className="mb-3"
-          placeholder="Search"
-          aria-label="Search"
-          onKeyUp={(e) =>
-            searchByCountryName(e.currentTarget.value.toLowerCase().trim())
-          }
-        />
+        <div className="input-group mb-3">
+          <input
+            type="text"
+            className="form-control"
+            placeholder="Search by Name"
+            value={searchName}
+            onChange={onChangeSearchName}
+          />
+          <Button
+            // className="btn btn-outline-secondary"
+            className="btns"
+            buttonStyle="btn--primary"
+            buttonSize="btn--large"
+            onClick={findByName}
+          >
+            Search
+          </Button>
+          <Button
+            // className="btn btn-outline-secondary"
+            className="btns"
+            buttonStyle="btn--primary"
+            buttonSize="btn--large"
+            onClick={retrieveCountries}
+          >
+            Show All
+          </Button>
+        </div>
 
-        <Table striped bordered hover>
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Capital</th>
-              <th>Region</th>
-            </tr>
-          </thead>
-          <tbody>
-            {searchValue.length
-              ? filteredCountries.map((country) => (
-                  <Country
-                    key={country.id}
-                    country={country}
-                    countryTitle={country.name}
-                  />
-                ))
-              : countries.map((country) => (
-                  <Country
-                    key={country.id}
-                    country={country}
-                    countryTitle={country.name}
-                  />
-                ))}
-            {/* {(searchValue.length ? filteredCountries : countries).map(
-            (country) => (
-              <Country
-                key={country.id}
-                country={country}
-                countryTitle={country.name}
-              />
-            )
-          )} */}
-          </tbody>
-        </Table>
+        <h2 className="title-countries p-3 mb-3">Countries</h2>
+
+        <div className="col-md-6">
+          {currentCountry ? (
+            <div>
+              <h4>Country</h4>
+              <div>
+                <label>
+                  <strong>Country:</strong>
+                </label>{" "}
+                {currentCountry.name}
+              </div>
+              <div>
+                <label>
+                  <strong>Capital:</strong>
+                </label>{" "}
+                {currentCountry.capital}
+              </div>
+              <div>
+                <label>
+                  <strong>Region:</strong>
+                </label>{" "}
+                {currentCountry.region}
+              </div>
+
+              {/* <Link
+                to={"/basket/" + currentCountry.id}
+                className="badge badge-warning"
+              >
+                add to Basket
+              </Link> */}
+            </div>
+          ) : (
+            <div className="country-table">
+              {/* <Table striped bordered hover> */}
+              <table className="table">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Capital</th>
+                    <th>Region</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {countries &&
+                    countries.map((country, index) => (
+                      <tr
+                        className={
+                          "list-group-item " +
+                          (index === currentIndex ? "active" : "")
+                        }
+                        onClick={() => setActiveCountry(country, index)}
+                        key={index}
+                      >
+                        <td>{country.name}</td>
+                        <td>{country.capital}</td>
+                        <td>{country.region}</td>
+                      </tr>
+                    ))}
+                </tbody>
+              </table>
+              {/* </Table> */}
+            </div>
+          )}
+        </div>
+
+        {/* <Button
+          // className="m-3 btn btn-sm btn-danger"
+          className="btns"
+          buttonStyle="btn--primary"
+          buttonSize="btn--large"
+          onClick={removeAllCountries}
+        >
+          Remove All
+        </Button> */}
       </div>
     </div>
   );
-}
+};
 
 export default Countries;

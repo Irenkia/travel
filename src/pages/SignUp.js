@@ -9,7 +9,7 @@ const SignUp = () => {
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [confirmPassword, setConfirmPassword] = useState("");
+  //const [confirmPassword, setConfirmPassword] = useState("");
 
   const handleInputChange = (e) => {
     const { id, value } = e.target;
@@ -25,13 +25,13 @@ const SignUp = () => {
     if (id === "password") {
       setPassword(value);
     }
-    if (id === "confirmPassword") {
-      setConfirmPassword(value);
-    }
+    // if (id === "confirmPassword") {
+    //   setConfirmPassword(value);
+    // }
   };
 
   const handleSubmit = () => {
-    console.log(firstName, lastName, email, password, confirmPassword);
+    console.log(firstName, lastName, email, password);
   };
 
   const { t } = useTranslation();
@@ -101,10 +101,10 @@ const SignUp = () => {
                 placeholder={t("sign_up_password")}
               />
             </div>
-            <div className="confirm-password">
+            {/* <div className="confirm-password">
               <label className="form-label" htmlFor="confirmPassword">
                 {t("sign_up_password2")}
-                {/* Confirm Password */}
+                Confirm Password 
               </label>
               <input
                 className="form-input"
@@ -114,7 +114,7 @@ const SignUp = () => {
                 id="confirmPassword"
                 placeholder={t("sign_up_password2")}
               />
-            </div>
+            </div> */}
           </div>
           <div className="submit">
             <button
@@ -134,3 +134,5 @@ const SignUp = () => {
 };
 
 export default SignUp;
+
+//"confirmPassword"
