@@ -15,6 +15,14 @@
   "about_title": "About Us",
 
   "dashboard_title": "Dashboard",
+  "db_search_by_name": "Search by Name",
+  "db_search": "Search",
+  "db_show_all": "Show All",
+  "db_table_title": "Countries",
+  "db_table_one_country": "Country",
+  "db_table_th1": "Name",
+  "db_table_th2": "Capital",
+  "db_table_th3": "Region",
 
   "sign_up_title": "Sign Up",
   "sign_up_name": "First Name",

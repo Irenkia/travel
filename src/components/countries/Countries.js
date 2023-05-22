@@ -1,11 +1,14 @@
 import React, { useEffect, useState } from "react";
 import CountriesService from "../../services/CountriesService";
 import { Button } from "../button/Button";
+import { useTranslation } from "react-i18next";
 //import { Link } from "react-router-dom";
 //import { Table, FormControl } from "react-bootstrap";
 import "./Countries.css";
 
 const Countries = () => {
+  const { t } = useTranslation();
+
   const [countries, setCountries] = useState([]);
   const [currentCountry, setCurrentCountry] = useState(null);
   const [currentIndex, setCurrentIndex] = useState(-1);
@@ -71,7 +74,8 @@ const Countries = () => {
           <input
             type="text"
             className="form-control"
-            placeholder="Search by Name"
+            placeholder={t("db_search_by_name")}
+            // "Search by Name"
             value={searchName}
             onChange={onChangeSearchName}
           />
@@ -82,7 +86,8 @@ const Countries = () => {
             buttonSize="btn--large"
             onClick={findByName}
           >
-            Search
+            {t("db_search")}
+            {/* Search */}
           </Button>
           <Button
             // className="btn btn-outline-secondary"
@@ -91,31 +96,44 @@ const Countries = () => {
             buttonSize="btn--large"
             onClick={retrieveCountries}
           >
-            Show All
+            {t("db_show_all")}
+            {/* Show All */}
           </Button>
         </div>
 
-        <h2 className="title-countries p-3 mb-3">Countries</h2>
+        <h2 className="title-countries p-3 mb-3">
+          {t("db_table_title")}
+          {/* Countries */}
+        </h2>
 
         <div className="col-md-6">
           {currentCountry ? (
             <div>
-              <h4>Country</h4>
+              <h4>
+                {t("db_table_one_country")}
+                {/* Country */}
+              </h4>
               <div>
                 <label>
-                  <strong>Country:</strong>
+                  <strong>
+                    {t("db_table_th1")}:{/* Country: */}
+                  </strong>
                 </label>{" "}
                 {currentCountry.name}
               </div>
               <div>
                 <label>
-                  <strong>Capital:</strong>
+                  <strong>
+                    {t("db_table_th2")}:{/* Capital: */}
+                  </strong>
                 </label>{" "}
                 {currentCountry.capital}
               </div>
               <div>
                 <label>
-                  <strong>Region:</strong>
+                  <strong>
+                    {t("db_table_th3")}:{/* Region: */}
+                  </strong>
                 </label>{" "}
                 {currentCountry.region}
               </div>
@@ -133,9 +151,18 @@ const Countries = () => {
               <table className="table">
                 <thead>
                   <tr>
-                    <th>Name</th>
-                    <th>Capital</th>
-                    <th>Region</th>
+                    <th>
+                      {t("db_table_th1")}
+                      {/* Name */}
+                    </th>
+                    <th>
+                      {t("db_table_th2")}
+                      {/* Capital */}
+                    </th>
+                    <th>
+                      {t("db_table_th3")}
+                      {/* Region */}
+                    </th>
                   </tr>
                 </thead>
                 <tbody>

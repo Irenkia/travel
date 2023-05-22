@@ -15,6 +15,14 @@
   "about_title": "Про нас",
 
   "dashboard_title": "Інформаційна панель",
+  "db_search_by_name": "Пошук за назвою",
+  "db_search": "Пошук",
+  "db_show_all": "Показати всі країни",
+  "db_table_title": "Країни",
+  "db_table_one_country": "Країна",
+  "db_table_th1": "Назва",
+  "db_table_th2": "Столиця",
+  "db_table_th3": "Регіон",
 
   "sign_up_title": "Зареєструватися",
   "sign_up_name": "Ім'я",

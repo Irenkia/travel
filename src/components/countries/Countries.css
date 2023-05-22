@@ -15,17 +15,16 @@
 
 .input-group {
   display: flex;
-  /* justify-content: center; */
 }
 
 .form-control {
   height: 4rem;
   padding: 12px 26px;
-  /* margin-top: 0 !important; */
   margin-right: 5px;
   font-size: 2rem;
   border: 1px solid var(--primary);
   border-radius: 0.5rem;
+  /* background: #f2f8f8; */
 }
 
 .btns {
