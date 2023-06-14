@@ -1,5 +1,6 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/navbar/Navbar";
 import RoutesConfig from "./constants/RoutesConfig";
 
@@ -8,15 +9,15 @@ import "./styles/App.css";
 function App() {
   return (
     <>
-      <Router>
-        <Routes>
-          <Route path="/" element={<Navbar />}>
-            {RoutesConfig.map((route, index) => (
-              <Route key={index} path={route.path} element={route.element} />
-            ))}
-          </Route>
-        </Routes>
-      </Router>
+      {/* <Router> */}
+      <Routes>
+        <Route path="/" element={<Navbar />}>
+          {RoutesConfig.map((route, index) => (
+            <Route key={index} path={route.path} element={route.element} />
+          ))}
+        </Route>
+      </Routes>
+      {/* </Router> */}
     </>
   );
 }
