@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/repo_name/static/css/main.09f5a816.css",
-    "main.js": "/repo_name/static/js/main.f31276de.js",
-    "static/media/img-1.png": "/repo_name/static/media/img-1.ed5208549bdac5d7528d.png",
-    "static/media/Europe.png": "/repo_name/static/media/Europe.451576150be9a1495935.png",
-    "static/media/fon1.jpg": "/repo_name/static/media/fon1.99cac380fb95a6085470.jpg",
-    "static/media/img-5.jpg": "/repo_name/static/media/img-5.f7d1ffc85639f433791f.jpg",
-    "static/media/vodopad.jpg": "/repo_name/static/media/vodopad.dbf21f2563d709857dc1.jpg",
-    "static/media/img-3.jpg": "/repo_name/static/media/img-3.3acc9f17c8a92b7b5989.jpg",
-    "static/media/img-4.jpg": "/repo_name/static/media/img-4.89b361a30cedb2655aa3.jpg",
-    "static/media/desert2.jpg": "/repo_name/static/media/desert2.3b274ab9cda8f2511ea5.jpg",
-    "static/media/islands2.jpg": "/repo_name/static/media/islands2.16b64bab21abbcd42659.jpg",
-    "static/media/Bali2.jpg": "/repo_name/static/media/Bali2.792590478bfd5c9516e2.jpg",
-    "static/media/Himalayas2.jpg": "/repo_name/static/media/Himalayas2.a41cd4aec38f699b433b.jpg",
-    "index.html": "/repo_name/index.html",
-    "static/media/getFetch.cjs": "/repo_name/static/media/getFetch.40f37ddea2378391108f.cjs",
-    "main.09f5a816.css.map": "/repo_name/static/css/main.09f5a816.css.map",
-    "main.f31276de.js.map": "/repo_name/static/js/main.f31276de.js.map"
+    "main.css": "/travel/static/css/main.2acd6173.css",
+    "main.js": "/travel/static/js/main.854012c1.js",
+    "static/media/img-1.png": "/travel/static/media/img-1.ed5208549bdac5d7528d.png",
+    "static/media/Europe.png": "/travel/static/media/Europe.451576150be9a1495935.png",
+    "static/media/fon1.jpg": "/travel/static/media/fon1.99cac380fb95a6085470.jpg",
+    "static/media/img-5.jpg": "/travel/static/media/img-5.f7d1ffc85639f433791f.jpg",
+    "static/media/vodopad.jpg": "/travel/static/media/vodopad.dbf21f2563d709857dc1.jpg",
+    "static/media/img-3.jpg": "/travel/static/media/img-3.3acc9f17c8a92b7b5989.jpg",
+    "static/media/img-4.jpg": "/travel/static/media/img-4.89b361a30cedb2655aa3.jpg",
+    "static/media/desert2.jpg": "/travel/static/media/desert2.3b274ab9cda8f2511ea5.jpg",
+    "static/media/islands2.jpg": "/travel/static/media/islands2.16b64bab21abbcd42659.jpg",
+    "static/media/Bali2.jpg": "/travel/static/media/Bali2.792590478bfd5c9516e2.jpg",
+    "static/media/Himalayas2.jpg": "/travel/static/media/Himalayas2.a41cd4aec38f699b433b.jpg",
+    "index.html": "/travel/index.html",
+    "static/media/getFetch.cjs": "/travel/static/media/getFetch.40f37ddea2378391108f.cjs",
+    "main.2acd6173.css.map": "/travel/static/css/main.2acd6173.css.map",
+    "main.854012c1.js.map": "/travel/static/js/main.854012c1.js.map"
   },
   "entrypoints": [
-    "static/css/main.09f5a816.css",
-    "static/js/main.f31276de.js"
+    "static/css/main.2acd6173.css",
+    "static/js/main.854012c1.js"
   ]
 }
