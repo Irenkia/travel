@@ -1,0 +1,67 @@
+{
+  "app_name": "TRVL",
+  "nav_link1": "Home",
+  "nav_link2": "About",
+  "nav_link3": "Dashboard",
+  "nav_link4": "Sign Up",
+
+  "basic_title": "ADVENTURE AWAITS",
+  "basic_text": "What are you waiting for?",
+  "basic_btn_get": "GET STARTED",
+  "basic_btn_see": "SEE OFFERS",
+
+  "cards_title": "Check out these EPIC Destinations!",
+
+  "about_title": "About Us",
+
+  "dashboard_title": "Dashboard",
+  "db_search_by_name": "Search by Name",
+  "db_search": "Search",
+  "db_show_all": "Show All",
+  "db_table_title": "Countries",
+  "db_table_one_country": "Country",
+  "db_table_th1": "Name",
+  "db_table_th2": "Capital",
+  "db_table_th3": "Region",
+
+  "sign_up_title": "Sign Up",
+  "sign_up_name": "First Name",
+  "sign_up_surname": "Last Name",
+  "sign_up_email": "Email",
+  "sign_up_password": "Password",
+  "sign_up_password2": "Confirm Password",
+  "sign_up_register": "Register",
+
+  "footer_title": "Join the Adventure newsletter to receive our best vacation deals",
+  "footer_text": "You can unsubscribe at any time",
+  "footer_email": "Your Email",
+  "footer_subscribe": "Subscribe",
+
+  "footer_links_title1": "About Us",
+  "footer_link_about1": "How it works",
+  "footer_link_about2": "Testimonials",
+  "footer_link_about3": "Careers",
+  "footer_link_about4": "Investors",
+  "footer_link_about5": "Terms of Service",
+
+  "footer_links_title2": "Contact Us",
+  "footer-link-sign-up1": "Contact",
+  "footer-link-sign-up2": "Support",
+  "footer-link-sign-up3": "Destinations",
+  "footer-link-sign-up4": "Sponsorships",
+
+  "footer_links_title3": "Videos",
+  "footer_link_video1": "Submit Video",
+  "footer_link_video2": "Ambassadors",
+  "footer_link_video3": "Agency",
+  "footer_link_video4": "Influencer",
+
+  "footer_links_title4": "Social Media",
+  "footer_link_media1": "Instagram",
+  "footer_link_media2": "Facebook",
+  "footer_link_media3": "Youtube",
+  "footer_link_media4": "Twitter",
+
+  "footer_social_media_logo": "TRVL",
+  "footer_social_media_logo_small": "TRVL © 2023"
+}
